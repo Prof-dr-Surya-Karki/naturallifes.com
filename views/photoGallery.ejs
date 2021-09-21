@@ -1,0 +1,26 @@
+<%-include("partials/header")-%>
+<!-- header end -->
+
+<!-- gallary start -->
+
+<section class="body margin-top-body">
+    <h2 class="decorative-font">Photo Gallery</h2>
+    <main class="main">
+        <div class="container">
+            <%for(let i=0; i<9; i++){%>
+            <div class="card">
+                <div class="card-image tilt">
+                    <a href="https://source.unsplash.com/1280x720/?nature" data-fancybox="gallery"
+                        data-caption="Caption Images <%=i+1%>">
+                        <img src="./img/Services/yoga.png" alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <%}%>
+            </div>
+        </main>
+    </section>
+    <!-- gallary end -->
+
+    <!-- footer start -->
+<%-include("partials/footer")-%>

@@ -1,0 +1,190 @@
+/* main colors*/
+/*screen sizes*/
+/*Root font size*/
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+section.company__details .flex-block {
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+
+section.company__details .flex-block:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.aboutUs__content {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 2rem;
+}
+
+.aboutUs__content h2 {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.aboutUs__content p {
+  font-size: 1.8rem;
+  position: relative;
+  color: #3D3D3D;
+  margin-left: 2rem;
+}
+
+.aboutUs__content p.saying::before {
+  position: absolute;
+  top: -1rem;
+  left: -2.5rem;
+  content: ' " ';
+  font-size: 5rem;
+  opacity: 0.5;
+}
+
+.extended__image {
+  max-width: 50rem;
+  text-align: center;
+  margin: auto;
+}
+
+.extended__image img {
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 60rem;
+}
+
+.owner__image {
+  max-width: 50rem;
+  text-align: center;
+  margin: auto;
+}
+
+.owner__image img {
+  margin: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.owner__image h2 {
+  margin: 1rem 0;
+}
+
+.owner__image h3 {
+  color: #535353;
+}
+
+section.aboutUs__team {
+  background: #01cc96;
+}
+
+section.aboutUs__team .aboutUs__team__card {
+  background: #F8FFE5;
+  max-width: 32rem;
+  padding: .5rem;
+  margin: 2rem;
+}
+
+section.aboutUs__team .aboutUs__team__card .aboutUs__team__image {
+  overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+section.aboutUs__team .aboutUs__team__card img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.aboutUs__team .aboutUs__team__card .abouUs__team__designation {
+  padding: 1rem;
+  text-align: center;
+}
+
+section.aboutUs__team .aboutUs__team__card .abouUs__team__designation h4 {
+  margin-top: .5rem;
+  color: #535353;
+}
+
+section.methodology .title {
+  font-size: 7rem;
+  margin-top: 3rem;
+}
+
+section.methodology .flex-block {
+  margin-top: 5rem;
+}
+
+section.methodology .flex__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 2rem;
+}
+
+section.methodology .flex__column .methodology__content {
+  margin: 5rem 0 5rem 5rem;
+  position: relative;
+}
+
+section.methodology .flex__column .methodology__content::before {
+  content: attr(data-number);
+  font-size: 6rem;
+  font-weight: bold;
+  position: absolute;
+  left: -5rem;
+  top: 50%;
+  color: #6e6e6e;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section.methodology .flex__column .methodology__content h2 {
+  margin-bottom: .5rem;
+}
+
+section.methodology .flex__column .methodology__content p {
+  text-align: justify;
+}
+
+@media (max-width: 780px) {
+  section.company__details .flex-block {
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+  .company__details .flex-block, .methodology .flex-block {
+    display: block;
+  }
+  .flex__column {
+    width: 90%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=aboutUs.css.map */

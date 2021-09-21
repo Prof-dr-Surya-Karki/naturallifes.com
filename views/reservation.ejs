@@ -1,0 +1,113 @@
+<%-include("partials/header")-%>
+
+        <div id="registering-label">
+            Registering User details please wait...
+        </div>
+        <div id="registeration-success-label">
+            <div class="thankyou-img">
+                <img src="./img/members/DrKarki.png">
+
+            </div>
+            <div class="contents">
+                <p>Thank you for reserving ! your reservation has been recorded successfully.</p>
+                <a href="http://naturallifes.com">Goto Home page</a>
+                <a href="http://naturallifes.com/inm">Make another reservation.</a>
+            </div>
+        </div>
+
+        <div class="registration_form" id="registration-form-block">
+
+            <div class="image_container">
+                <img src="./img/slide/slide3.jpg">
+                <img src="./img/slide/slide2.jpg">
+            </div>
+
+            <div class="form_container">
+
+                <form id="registration-form" name="registration-form">
+                    <div id="step-1">
+                        <div class="registration_label">
+                            <H2>Institute of Natural Medicine
+                            </H2>
+                            <h3>Reservation Form</h3>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <label for="fname">Full Name :</label>
+                            </div>
+                            <div class='form-control'>
+                                <input type="text" placeholder="Your full name here." id="fname"
+                                    name="Full_Name" class="required-at-step-1" required>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <label for="reservation_date">Reservation date:</label>
+                            </div>
+                            <div class='form-control'>
+                                <input type="date" id="reservation_date"
+                                    placeholder="Please provide reservation date here." name="Reservation_Date"
+                                    class="required-at-step-1" required>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <label for="service">Service:</label>
+                            </div>
+                            <div class='form-control'>
+                                <select id="service" name="Service" class="required-at-step-1"required>
+                                    <option value="">--Select the service--</option>
+                                    <option value="Yoga and Meditation Class">Yoga and Meditation Class</option>
+                                    <option value="Massage Therapy">Massage Therapy</option>
+                                    <option value="Mud Therapy">Mud Therapy</option>
+                                    <option value="Acupressure">Acupressure</option>
+                                    <option value="Steam-bath">Steam-bath</option>
+                                    <option value="Six cleaning acts">Six cleaning acts</option>
+                                    <option value="Reiki">Reiki</option>
+                                    <option value="Shankhaprakshalana">Shankhaprakshalana</option>
+                                </select>
+                                <small>Error message</small>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <label for="phoneNumber">Contact Number:</label>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" id="phoneNumber" name="Phone_Number"
+                                    placeholder="Please enter your phone number." class="required-at-step-1" required>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <label for="emailAddress">Email Address:</label>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" id="email" name="Email_Address"
+                                    placeholder="Please enter your email id." class="required-at-step-1" required>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+
+
+                        <div class="submit">
+                            <input type="submit" value="submit">
+                        </div>
+
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <%-include("partials/footer")-%>

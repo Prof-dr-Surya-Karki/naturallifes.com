@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naturallife |
+    <%if (active == "home"){%> Home <%}%>
+       <%if (active == "events"){%> Events <%}%>
+       <%if (active == "recom"){%> Recommendation <%}%>
+       <%if (active == "blog"){%> Blog <%}%>
+       <%if (active == "photo"){%> PhotoGallery <%}%>
+       <%if (active == "about"){%> About Us <%}%>
+      </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
+    
+    <%if (active == "about"){%>
+    <link rel="stylesheet" type="text/css" href="./css/aboutUs.css" /><%}%>
+    <%if (active == "blog"){%>
+    <link rel="stylesheet" type="text/css" href="/css/blog.css" /><%}%>
+    <%if (active == "events"){%>
+    <link rel="stylesheet" type="text/css" href="/css/events.css" /><%}%>
+    <%if (active == "form-reser" || active == "form-regis"){%>
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="/css/form_style.css" /><%}%>
+    <%if (active == "photo"){%>
+    <link rel="stylesheet" type="text/css" href="./css/photogallary.css"><%}%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <%if (active == "recom"){%>
+    <link rel="stylesheet" type="text/css" href="/css/recommendation.css" /><%}%>
+
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="./css/owlcarousel.css" />
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" alt="LOGO" />
+        </div>
+        <h1>INSTITUTE OF NATURAL MEDICINE</h1>
+        <div class="nav-links">
+          <ul>
+            <li><a <%if (active == "home"){%> class="active" <%}%> href="./">Home</a></li>
+            <li><a <%if (active == "events"){%> class="active" <%}%>  href="./events">Events</a></li>
+            <li><a <%if (active == "recom"){%> class="active" <%}%> href="./recommendation">Recommendations</a></li>
+            <li><a <%if (active == "blog"){%> class="active" <%}%> href="./blog">Blog</a></li>
+            <li><a <%if (active == "photo"){%> class="active" <%}%> href="./photoGallery">Photo Gallery</a></li>
+            <li><a <%if (active == "about"){%> class="active" <%}%> href="./aboutUs">About Us</a></li>
+            <li><a href="./reservation" class="book-now-btn">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>

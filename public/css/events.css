@@ -1,0 +1,168 @@
+/* main colors*/
+/*screen sizes*/
+/*Root font size*/
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  background-color: #f7f8fc;
+}
+
+.upcoming__events h2 {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  background: #3D3D3D;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.1rem;
+}
+
+.container {
+  padding: 1.5rem 3rem;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: calc(50% - 8px);
+  right: -1rem;
+  background: #f7f8fc;
+  border: 0.2rem solid #3D3D3D;
+  border-radius: 1.6rem;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -1rem;
+}
+
+.container.right::before {
+  left: 0.8rem;
+}
+
+.container .content .content__headPrimary {
+  background-color: #01cc96;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: white;
+}
+
+.container .content .content__headTertiary {
+  background-color: #F18D20;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: white;
+}
+
+.container .content .content__headSkyblue {
+  background-color: #52c6ee;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: white;
+}
+
+.container .content .content__headGrey {
+  background-color: #bab8b8;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: white;
+}
+
+.container .content .content__body {
+  padding: 2rem 3rem 2rem 3rem;
+  background-color: #fff;
+  border-bottom-left-radius: 1rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.container .content .content__body p {
+  text-indent: -0.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.container .content .content__body p:before {
+  content: "-";
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .timeline::after {
+    left: 6rem;
+  }
+  .container {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+  .container.right {
+    left: 0%;
+  }
+  .container.left::after,
+  .container.right::after {
+    left: 5rem;
+  }
+  .container.left::before,
+  .container.right::before {
+    left: 1rem;
+    border-color: transparent #3D3D3D transparent transparent;
+  }
+  .container.left .content,
+  .container.right .content {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+}
+/*# sourceMappingURL=events.css.map */

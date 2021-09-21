@@ -1,0 +1,23 @@
+<%-include("partials/blog_header")-%>
+    <!-- header end -->
+
+    <!-- Body -->
+    <section class="body margin-top-body">
+      <div class="blog">
+        <h2 class="decorative-font">Blog</h2>
+        <div class="container">
+
+          <img
+          class="img__primary adaptiveBG greyscale"
+          src="/img/yoga.svg"
+          alt="yoga"
+        />
+        <h3><%= blog.Title %></h3>
+        <p> 
+          <%= blog.Blog %>
+        </p>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <%-include("partials/blog_footer")-%>

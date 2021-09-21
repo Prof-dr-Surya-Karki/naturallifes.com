@@ -1,0 +1,37 @@
+@import "./_variable.scss";
+
+.recommendation {
+  .recommendation__gallery {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+
+    .photo__frame {
+      width: 30rem;
+      height: 45rem;
+      margin: 2.5rem 1.5rem;
+      border: 1rem solid #187a87;
+      border-width: 1.5rem;
+      box-shadow: 0 2rem 1.6rem rgba(0, 0, 0, 0.25),
+        0 0.8rem 0.8rem rgba(0, 0, 0, 0.22);
+      transition-timing-function: ease-in-out;
+      transition: 0.5s;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+    .photo__frame:hover {
+      transform: translateY(-1rem);
+    }
+  }
+}

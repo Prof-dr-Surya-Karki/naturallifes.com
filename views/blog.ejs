@@ -1,0 +1,32 @@
+<%-include("partials/header")-%>
+<!-- header end -->
+
+<!-- Body -->
+<section class="body margin-top-body">
+  <div class="blog">
+    <h2 class="decorative-font">Blog</h2>
+    <div class="container">
+
+      <%blogs.forEach(blog => {%>
+      <div class="card">
+        <div class="card__header">
+          <img class="img__primary adaptiveBG greyscale" src="/img/yoga.svg" alt="yoga" />
+        </div>
+        <div class="card__body">
+          <span class="tag">Institute of Natural Medicine</span>
+          <span class="tag"><%= blog.TimeStamp %></span>
+          <h3><%= blog.Title %></h3>
+          <p>
+            <%- blog.Blog.substring(0,70) -%>...
+          </p>
+          <a href="/blog/<%=blog.Title%>" class="book-now-btn">Continue Reading</a>
+        </div>
+      </div>
+      <% })%>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer start -->
+<%-include("partials/footer")-%>

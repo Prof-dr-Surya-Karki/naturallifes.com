@@ -1,0 +1,126 @@
+/* main colors*/
+/*screen sizes*/
+/*Root font size*/
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+  left: 0;
+}
+
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(61, 61, 61, 0.5) !important;
+}
+
+.owl-carousel:hover .owl-nav button {
+  opacity: 1;
+}
+
+span {
+  color: #F8FFE5;
+  font-size: 8rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.owl-nav button:focus {
+  outline: none;
+}
+
+.customer .owl-nav button {
+  position: absolute;
+  top: 50%;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent !important;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+@media (max-width: 780px) {
+  .customer .owl-nav button {
+    top: 30%;
+  }
+}
+
+.customer .owl-nav button span {
+  color: #F8FFE5;
+  font-size: 15rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.customer .owl-nav button.owl-prev {
+  left: 2.5%;
+}
+
+.customer .owl-nav button.owl-next {
+  right: 2.5%;
+}
+
+section.top-carousel {
+  padding-top: 0;
+  overflow: hidden;
+  height: 45rem;
+  background: rgba(61, 61, 61, 0.8);
+}
+
+section.top-carousel .item {
+  position: relative;
+}
+
+section.top-carousel .item img {
+  height: 45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.top-carousel .item h2 {
+  color: #F8FFE5;
+  width: 100%;
+  position: absolute;
+  font-weight: normal;
+  bottom: 0rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: rgba(1, 204, 150, 0.7);
+  padding: 1rem 0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/*# sourceMappingURL=owlcarousel.css.map */

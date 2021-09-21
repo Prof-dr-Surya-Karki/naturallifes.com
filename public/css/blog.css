@@ -1,0 +1,120 @@
+/* main colors*/
+/*screen sizes*/
+/*Root font size*/
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  background-color: #f7f8fc;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+}
+
+body .card {
+  margin: 2.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 30rem;
+  height: 43rem;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+body .card:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+body .card__header img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: conatin;
+     object-fit: conatin;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body .img__primary {
+  background: #01cc96;
+}
+
+body .img__skyblue {
+  background: #52c6ee;
+}
+
+body .img__tertiary {
+  background: #F18D20;
+}
+
+body .img__grey {
+  background: #bab8b8;
+}
+
+body .card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2rem;
+  min-height: 25rem;
+}
+
+body .tag {
+  background: #cccccc;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body .card__body p {
+  font-size: 1.2rem;
+  margin: 0 0 3rem;
+  text-align: justify;
+}
+
+body .card__body h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=blog.css.map */
