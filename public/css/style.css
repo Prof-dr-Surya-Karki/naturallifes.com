@@ -92,7 +92,6 @@ h2.decorative-font {
   color: #3D3D3D;
 }
 
-
 .greyscale {
   background-color: rgba(61, 61, 61, 0.5) !important;
 }
@@ -846,9 +845,5 @@ footer {
   .links[id="about-us-footer"] {
     display: none;
   }
-}
-
-#nync{
-  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

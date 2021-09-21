@@ -270,25 +270,6 @@ nav .nav-links ul li a:hover::before, nav .nav-links ul li a:hover::after {
   transition: all 0.3s ease;
 }
 
-.hamburger:hover {
-  -webkit-animation: hamburgerAni 0.5s forwards;
-          animation: hamburgerAni 0.5s forwards;
-}
-
-@-webkit-keyframes hamburgerAni {
-  100% {
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
-  }
-}
-
-@keyframes hamburgerAni {
-  100% {
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
-  }
-}
-
 /*Animating Hamburger Icon on Click*/
 .nav-active .line1 {
   -webkit-transform: rotate(-45deg) translate(-0.5rem, 0.6rem);

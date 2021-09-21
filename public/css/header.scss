@@ -229,14 +229,7 @@ nav {
     margin: 0.6rem;
     transition: all 0.3s ease;
 }
-.hamburger:hover{
-    animation: hamburgerAni 0.5s forwards;
-}
- @keyframes hamburgerAni{
-     100%{
-         transform:rotateZ(180deg);
-     }
- }
+
 /*Animating Hamburger Icon on Click*/
 .nav-active .line1{
     transform: rotate(-45deg) translate(-0.5rem,0.6rem);
