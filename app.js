@@ -3,6 +3,7 @@ const ejs = require('ejs')
 const _ = require("lodash")
 const dbConn = require("./database/dbConn")
 const dotenv = require("dotenv")
+const blogRoute = require("./routes/blougRoute")
 
 
 const app = express()
@@ -30,47 +31,8 @@ app.get("/aboutUs", (req, res) => {
     })
 })
 
-
-//reading every blogs from database and displaying it to the websites at /blog
-app.get("/blog", (req, res) => {
-    dbConn.query("SELECT * from techblog", (err, rows, fields) => {
-        if (err) {
-            console.log(
-                err.message
-            )
-            res.redirect("/blog")
-        } else {
-            res.render("blog", {
-                blogs  : rows,
-                active : "blog"
-            })
-        }
-
-    })
-})
-
-//reading a particular blog from database and displaying it to the websites at /blog/title
-app.get("/blog/:title", (req, res) => {
-
-    const Title = req.params.title
-
-    console.log(Title)
-
-     dbConn.query("SELECT * from techblog WHERE Title=?", Title, (err, rows, fields) => {
-        if (err) {
-            console.log(
-                err.message
-            )
-            res.redirect("/blog")
-        } else {
-            res.render("readBlog", {
-                blog: rows[0],
-                active : "blog"
-            })
-        }
-    })
-})
-
+//
+app.use("/blog",blogRoute)
 
 //displays events us page in the website
 app.get("/events", (req, res) => {
@@ -90,6 +52,13 @@ app.get("/photoGallery", (req, res) => {
 app.get("/recommendation", (req, res) => {
     res.render("recommendation",{
         active : "recom"
+    })
+})
+
+//displays the research page
+app.get("/research",(req,res) => {
+    res.render("research",{
+        active : "research"
     })
 })
 

@@ -7,12 +7,23 @@
     <h2 class="decorative-font">Photo Gallery</h2>
     <main class="main">
         <div class="container">
+            <% const images = [
+            "./img/photogallery/reiki.png"
+            ,"./img/photogallery/breakfast.png"
+            ,"./img/photogallery/sirodhara.png"
+            ,"./img/photogallery/yoga.png"
+            ,"./img/photogallery/breakfast_group.png"
+            ,"./img/photogallery/yoga_morning.png"
+            ,"./img/photogallery/student_certified.png"
+            ,"./img/Services/naturopathy.png"
+            ,"./img/inm.png"
+            ]%>
             <%for(let i=0; i<9; i++){%>
             <div class="card">
                 <div class="card-image tilt">
-                    <a href="https://source.unsplash.com/1280x720/?nature" data-fancybox="gallery"
+                    <a href="<%=images[i]%>" data-fancybox="gallery"
                         data-caption="Caption Images <%=i+1%>">
-                        <img src="./img/Services/yoga.png" alt="Image Gallery">
+                        <img src="<%=images[i]%>" alt="Image Gallery">
                     </a>
                 </div>
             </div>

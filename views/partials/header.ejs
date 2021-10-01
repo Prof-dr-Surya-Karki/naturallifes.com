@@ -10,12 +10,17 @@
        <%if (active == "events"){%> Events <%}%>
        <%if (active == "recom"){%> Recommendation <%}%>
        <%if (active == "blog"){%> Blog <%}%>
+       <%if (active == "research"){%> Research <%}%>
        <%if (active == "photo"){%> PhotoGallery <%}%>
        <%if (active == "about"){%> About Us <%}%>
       </title>
+
+    <link rel="icon" type="image/png"  href="./img/logo.png" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/header.css" />
-    
+
+    <%if (active == "home"){%>
+    <link rel="stylesheet" type="text/css" href="./css/popup.css" /><%}%>
     <%if (active == "about"){%>
     <link rel="stylesheet" type="text/css" href="./css/aboutUs.css" /><%}%>
     <%if (active == "blog"){%>
@@ -52,6 +57,7 @@
             <li><a <%if (active == "events"){%> class="active" <%}%>  href="./events">Events</a></li>
             <li><a <%if (active == "recom"){%> class="active" <%}%> href="./recommendation">Recommendations</a></li>
             <li><a <%if (active == "blog"){%> class="active" <%}%> href="./blog">Blog</a></li>
+            <li><a <%if (active == "research"){%> class="active" <%}%> href="./research">Research</a></li>
             <li><a <%if (active == "photo"){%> class="active" <%}%> href="./photoGallery">Photo Gallery</a></li>
             <li><a <%if (active == "about"){%> class="active" <%}%> href="./aboutUs">About Us</a></li>
             <li><a href="./reservation" class="book-now-btn">Book Now</a></li>
