@@ -75,6 +75,32 @@ app.get("/registration",(req,res)=>{
     })
 })
 
+app.get("/yoga",(req,res)=>{
+    res.render("yoga",{
+        active : "form-regis"
+    })
+})
+
+app.get("/courses",(req,res)=>{
+    res.render("courses",{
+        active : "course"
+    })
+})
+
+app.get("/massage",(req,res)=>{
+    res.render("massage",{
+        active : "form-regis"
+    })
+})
+
+
+//displays the home page in the website for all 404
+app.get("*", (req, res) => {
+    res.render("index",{
+        active : "home"
+    })
+})
+
 //Invoking the server
 app.listen(3000, (req, res) => {
     console.log(

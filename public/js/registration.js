@@ -149,4 +149,4 @@ Registration_Form.addEventListener('submit', e => {
   console.log("Submitting....");
   updateDatabase()
   console.log("Submitted.");
-});
+})

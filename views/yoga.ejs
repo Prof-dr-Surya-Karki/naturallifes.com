@@ -1,0 +1,416 @@
+<%-include("partials/header")-%>
+
+  <!-- header end -->
+
+  <!-- Body -->
+  <div id="registering-label">
+    Registering User details please wait...
+</div>
+<div id="registeration-success-label">
+    <div class="thankyou-img">
+        <img src="dr-suryakarki.png">
+
+    </div>
+    <div class="contents">
+        <p>Thank you for registering ! your data has been recorded successfully</p>
+        <a href="http://naturallifes.com">Goto Home page</a>
+        <a href="http://naturallifes.com/registration">Register another record</a>
+    </div>
+</div>
+
+<div class="registration_form" id="registration-form-block">
+
+    <div class="image_container">
+        <img src="./img/slide/slide3.jpg">
+        <img src="./img/slide/slide2.jpg">
+    </div>
+
+    <div class="form_container">
+
+        <form id="registration-form" name="registration-form">
+            <div id="step-1">
+                <div class="registration_label">
+                    <H2>Institute of Natural Medicine</H2>
+                    <h3>Yoga Therapy Training(National and International)</h3>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="fname">Full Name (नाम र थर):</label>
+                    </div>
+                    <div class='form-control'>
+                        <input type="text" placeholder="तपाईंको पुरा नाम यहाँ लेख्नुहोस्" id="fname"
+                            name="Full_Name" class="required-at-step-1" required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="birthday">Date Of Birth(जन्म मिति):</label>
+                    </div>
+                    <div class='form-control'>
+                        <input type="text" id="birthday"
+                            placeholder="तपाईंको जन्म मिति यहाँ लेख्नुहोस् (yyyy/mm/dd)" name="DOB"
+                            class="required-at-step-1" required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="fathername">Father's Name(बुवाको नाम):</label>
+                    </div>
+                    <div class='form-control'>
+                        <input type="text" id="fathername" placeholder="तपाईंको बुवाको नाम यहाँ लेख्नुहोस्"
+                            name="Father's_Name" class="required-at-step-1" required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="mothername">Mother's Name(आमाको नाम):</label>
+                    </div>
+                    <div class='form-control'>
+                        <input type="text" id="mothername" placeholder="तपाईंको आमाको नाम यहाँ लेख्नुहोस्"
+                            name="Mother's_Name" class="required-at-step-1" required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="Spousename">Spouse's Name(विवाहित भएमा पति वा पत्नीको नाम):</label>
+                    </div>
+                    <div class='form-control'>
+                        <input type="text" placeholder="तपाईंको पति वा पत्नीको नाम  यहाँ लेख्नुहोस्"
+                            name="Spouse's_Name">
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="Paddress">Permanent Address(स्थायी ठेगाना):</label>
+                    </div>
+                    <div class='form-control'>
+                        <select id="province" name="PProvince" class="required-at-step-1" required>
+                            <option value="">--प्रदेश रोज्नुहोस--</option>
+                            <option value="Number 1">Number 1</option>
+                            <option value="Number 2">Number 2</option>
+                            <option value="Bagmati Pradesh">Bagmati Pradesh</option>
+                            <option value="Gandaki Pradesh">Gandaki Pradesh</option>
+                            <option value="Lumbini Pradesh">Lumbini Pradesh</option>
+                            <option value="Karnali Pradesh">Karnali Pradesh</option>
+                            <option value="Number 7">Sudurpashchim Pradesh</option>
+                        </select>
+                        <select id="district" name='PDistrict' class="required-at-step-1" required>
+
+                            <option value="">--जिल्ला रोज्नुहोस--</option>
+
+                            <option disabled>----Koshi----</option>
+
+                            <option value="Taplejung">Taplejung</option>
+                            <option value="Panchthar">Panchthar</option>
+                            <option value="Ilam">Ilam</option>
+                            <option value="Jhapa">Jhapa</option>
+                            <option value="Morang">Morang</option>
+                            <option value="Sunsari">Sunsari</option>
+                            <option value="Dhankutta">Dhankutta</option>
+                            <option value="Sankhuwasabha">Sankhuwasabha</option>
+                            <option value="Bhojpur">Bhojpur</option>
+                            <option value="Terhathum">Terhathum</option>
+
+                            <option disabled>----Sagarmatha----</option>
+                            <option value="Okhaldunga">Okhaldunga</option>
+                            <option value="Khotang">Khotang</option>
+                            <option value="Solukhumbu">Solukhumbu</option>
+                            <option value="Udaypur">Udaypur</option>
+                            <option value="Saptari">Saptari</option>
+                            <option value="Siraha">Siraha</option>
+
+                              <option disabled>----Janakpur----</option>
+                            <option value="Dhanusa">Dhanusa</option>
+                            <option value="Mahottari">Mahottari</option>
+                            <option value="Sarlahi">Sarlahi</option>
+                            <option value="Sindhuli">Sindhuli</option>
+                            <option value="Ramechhap">Ramechhap</option>
+                            <option value="Dolkha">Dolkha</option>
+
+                            <option disabled>----Bagmati----</option>
+                            <option value="Sindhupalchauk">Sindhupalchauk</option>
+                            <option value="Kavreplanchauk">Kavreplanchauk</option>
+                            <option value="Lalitpur">Lalitpur</option>
+                            <option value="Bhaktapur">Bhaktapur</option>
+                            <option value="Kathmandu">Kathmandu</option>
+                            <option value="Nuwakot">Nuwakot</option>
+                            <option value="Rasuwa">Rasuwa</option>
+                            <option value="Dhading">Dhading</option>
+
+                            <option disabled>----Narayani----</option>
+                            <option value="Makwanpur">Makwanpur</option>
+                            <option value="Rauthat">Rauthat</option>
+                            <option value="Bara">Bara</option>
+                            <option value="Parsa">Parsa</option>
+                            <option value="Chitwan">Chitwan</option>
+
+                            <option disabled>----Gandaki----</option>
+                            <option value="Gorkha">Gorkha</option>
+                            <option value="Lamjung">Lamjung</option>
+                            <option value="Tanahun">Tanahun</option>
+                            <option value="Tanahun">Tanahun</option>
+                            <option value="Syangja">Syangja</option>
+                            <option value="Kaski">Kaski</option>
+                            <option value="Manag">Manag</option>
+
+                            <option disabled>----Dhawalagiri----</option>
+                            <option value="Mustang">Mustang</option>
+                            <option value="Parwat">Parwat</option>
+                            <option value="Myagdi">Myagdi</option>
+                            <option value="Myagdi">Myagdi</option>
+                            <option value="Baglung">Baglung</option>
+
+                            <option disabled>----Lumbini----</option>
+                            <option value="Gulmi">Gulmi</option>
+                            <option value="Palpa">Palpa</option>
+                            <option value="Nawalpur">Nawalpur</option>
+                            <option value="Parasi">Parasi</option>
+                            <option value="Rupandehi">Rupandehi</option>
+                            <option value="Arghakhanchi">Arghakhanchi</option>
+                            <option value="Kapilvastu">Kapilvastu</option>
+
+                            <option disabled>----Rapti----</option>
+                            <option value="Pyuthan">Pyuthan</option>
+                            <option value="Rolpa">Rolpa</option>
+                            <option value="Rukum">Rukum</option>
+                            <option value="Salyan">Salyan</option>
+                            <option value="Dang">Dang</option>
+
+                            <option disabled>----Bheri----</option>
+                            <option value="Bardiya">Bardiya</option>
+                            <option value="Surkhet">Surkhet</option>
+                            <option value="Dailekh">Dailekh</option>
+                            <option value="Banke">Banke</option>
+                            <option value="Jajarkot">Jajarkot</option>
+
+                            <option disabled>----Karnali----</option>
+                            <option value="Dolpa">Dolpa</option>
+                            <option value="Humla">Humla</option>
+                            <option value="Kalikot">Kalikot</option>
+                            <option value="Mugu">Mugu</option>
+                            <option value="Jumla">Jumla</option>
+                            <option value="Rukum Paschim">Rukum Paschim</option>
+
+                            <option disabled>----Seti----</option>
+                            <option value="Bajura">Bajura</option>
+                            <option value="Bajhang">Bajhang</option>
+                            <option value="Achham">Achham</option>
+                            <option value="Doti">Doti</option>
+                            <option value="Kailali">Kailali</option>
+
+                            <option disabled>----Mahakali----</option>
+                            <option value="Kanchanpur">Kanchanpur</option>
+                            <option value="Dadeldhura">Dadeldhura</option>
+                            <option value="Baitadi">Baitadi</option>
+                            <option value="Darchula">Darchula</option>
+                        </select>
+                        <input type="text" id="local_address" name="PLocal_Address"
+                            placeholder="गाउँपालिका/नगरपालिका" required>
+                        <small>Error message</small>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="Taddress">Temprary Address(अस्थायी ठेगाना):</label>
+                    </div>
+                    <div class='form-control'>
+                        <select id="province" name="TProvince" class="required-at-step-1" required>
+                            <option value="">--प्रदेश रोज्नुहोस--</option>
+                            <option value="Number 1">Number 1</option>
+                            <option value="Number 2">Number 2</option>
+                            <option value="Bagmati Pradesh">Bagmati Pradesh</option>
+                            <option value="Gandaki Pradesh">Gandaki Pradesh</option>
+                            <option value="Lumbini Pradesh">Lumbini Pradesh</option>
+                            <option value="Karnali Pradesh">Karnali Pradesh</option>
+                            <option value="Number 7">Sudurpashchim Pradesh</option>
+                        </select>
+                        <select id="district" name='TDistrict' class="required-at-step-1" required>
+
+                            <option value="">--जिल्ला रोज्नुहोस--</option>
+
+                            <option disabled>----Koshi----</option>
+
+                            <option value="Taplejung">Taplejung</option>
+                            <option value="Panchthar">Panchthar</option>
+                            <option value="Ilam">Ilam</option>
+                            <option value="Jhapa">Jhapa</option>
+                            <option value="Morang">Morang</option>
+                            <option value="Sunsari">Sunsari</option>
+                            <option value="Dhankutta">Dhankutta</option>
+                            <option value="Sankhuwasabha">Sankhuwasabha</option>
+                            <option value="Bhojpur">Bhojpur</option>
+                            <option value="Terhathum">Terhathum</option>
+
+                            <option disabled>----Sagarmatha----</option>
+                            <option value="Okhaldunga">Okhaldunga</option>
+                            <option value="Khotang">Khotang</option>
+                            <option value="Solukhumbu">Solukhumbu</option>
+                            <option value="Udaypur">Udaypur</option>
+                            <option value="Saptari">Saptari</option>
+                            <option value="Siraha">Siraha</option>
+
+                            <option disabled>----Janakpur----</option>
+                            <option value="Dhanusa">Dhanusa</option>
+                            <option value="Mahottari">Mahottari</option>
+                            <option value="Sarlahi">Sarlahi</option>
+                            <option value="Sindhuli">Sindhuli</option>
+                            <option value="Ramechhap">Ramechhap</option>
+                            <option value="Dolkha">Dolkha</option>
+
+                            <option disabled>----Bagmati----</option>
+                            <option value="Sindhupalchauk">Sindhupalchauk</option>
+                            <option value="Kavreplanchauk">Kavreplanchauk</option>
+                            <option value="Lalitpur">Lalitpur</option>
+                            <option value="Bhaktapur">Bhaktapur</option>
+                            <option value="Kathmandu">Kathmandu</option>
+                            <option value="Nuwakot">Nuwakot</option>
+                            <option value="Rasuwa">Rasuwa</option>
+                            <option value="Dhading">Dhading</option>
+
+                            <option disabled>----Narayani----</option>
+                            <option value="Makwanpur">Makwanpur</option>
+                            <option value="Rauthat">Rauthat</option>
+                            <option value="Bara">Bara</option>
+                            <option value="Parsa">Parsa</option>
+                            <option value="Chitwan">Chitwan</option>
+
+                            <option disabled>----Gandaki----</option>
+                            <option value="Gorkha">Gorkha</option>
+                            <option value="Lamjung">Lamjung</option>
+                            <option value="Tanahun">Tanahun</option>
+                            <option value="Tanahun">Tanahun</option>
+                            <option value="Syangja">Syangja</option>
+                            <option value="Kaski">Kaski</option>
+                            <option value="Manag">Manag</option>
+
+                            <option disabled>----Dhawalagiri----</option>
+                            <option value="Mustang">Mustang</option>
+                            <option value="Parwat">Parwat</option>
+                            <option value="Myagdi">Myagdi</option>
+                            <option value="Myagdi">Myagdi</option>
+                            <option value="Baglung">Baglung</option>
+
+                            <option disabled>----Lumbini----</option>
+                            <option value="Gulmi">Gulmi</option>
+                            <option value="Palpa">Palpa</option>
+                            <option value="Nawalpur">Nawalpur</option>
+                            <option value="Parasi">Parasi</option>
+                            <option value="Rupandehi">Rupandehi</option>
+                            <option value="Arghakhanchi">Arghakhanchi</option>
+                            <option value="Kapilvastu">Kapilvastu</option>
+
+                            <option disabled>----Rapti----</option>
+                            <option value="Pyuthan">Pyuthan</option>
+                            <option value="Rolpa">Rolpa</option>
+                            <option value="Rukum">Rukum</option>
+                            <option value="Salyan">Salyan</option>
+                            <option value="Dang">Dang</option>
+
+                            <option disabled>----Bheri----</option>
+                            <option value="Bardiya">Bardiya</option>
+                            <option value="Surkhet">Surkhet</option>
+                            <option value="Dailekh">Dailekh</option>
+                            <option value="Banke">Banke</option>
+                            <option value="Jajarkot">Jajarkot</option>
+
+                            <option disabled>----Karnali----</option>
+                            <option value="Dolpa">Dolpa</option>
+                            <option value="Humla">Humla</option>
+                            <option value="Kalikot">Kalikot</option>
+                            <option value="Mugu">Mugu</option>
+                            <option value="Jumla">Jumla</option>
+                            <option value="Rukum Paschim">Rukum Paschim</option>
+
+                            <option disabled>----Seti----</option>
+                            <option value="Bajura">Bajura</option>
+                            <option value="Bajhang">Bajhang</option>
+                            <option value="Achham">Achham</option>
+                            <option value="Doti">Doti</option>
+                            <option value="Kailali">Kailali</option>
+
+                            <option disabled>----Mahakali----</option>
+                            <option value="Kanchanpur">Kanchanpur</option>
+                            <option value="Dadeldhura">Dadeldhura</option>
+                            <option value="Baitadi">Baitadi</option>
+                            <option value="Darchula">Darchula</option>
+                        </select>
+                        <input type="text" id="local_address" name="TLocal_Address"
+                            placeholder="गाउँपालिका/नगरपालिका" required>
+                        <small>Error message</small>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="phoneNumber">Contact Number(सम्पर्क नम्बर):</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="phoneNumber" name="Phone_Number"
+                            placeholder="तपाईंको सम्पर्क नम्बर  यहाँ लेख्नुहोस्" class="required-at-step-1"
+                            required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="emailAddress">Email Address(ईमेल ठेगाना):</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" name="Email_Address"
+                            placeholder="तपाईंको ईमेल ठेगाना यहाँ लेख्नुहोस्" class="required-at-step-1"
+                            required>
+                        <small>Error message</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <label for="ID">Course you want to enroll in(भर्ना हुन चाहेको विषय):</label>
+                    </div>
+                    <div class='form-control'>
+                        <select id="yoga" name="yoga" >
+                            <option value="">--Select Yoga--</option>
+                            <option value="Three months yoga teacher training">Three months Certification in yoga teacher(minimum +2 pass)</option>
+                            <option value="International Yoga teacher training">International Yoga teacher training (200-500 hours).World Yoga Alliance</option>
+                            <!-- <option value="BA in Yoga-3 Years">BA in Yoga-3 Years</option>
+                            <option value="Diploma in yogic science-1year">Diploma in yogic science-1year</option>
+                            <option value="200 hours national yoga teacher training">200 hours national yoga teacher training</option>
+                            <option value="500 hours international yoga teacher training">500 hours international yoga teacher training</option>
+                            <option value="16 hours basic yoga teacher training">16 hours basic yoga teacher training</option>
+                            <option value="Diploma in Yogic Science 1 year">Diploma in Yogic Science 1 Year From UOU</option> -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+
+            </div>
+
+    </div>
+    </form>
+    <script src="./js/form.js">
+        
+    </script>
+</div>
+</div>
+
+
+  <!-- footer start -->
+  <%-include("partials/footer")-%>

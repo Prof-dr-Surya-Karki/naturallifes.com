@@ -83,7 +83,7 @@ p {
 }
 
 .decorative-font {
-  font-family: "Dancing Script", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2.decorative-font {
@@ -137,7 +137,7 @@ h2.decorative-font {
   transition: all 0.5s;
   border-radius: 0.8rem;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .book-now-btn:hover:before {
@@ -155,7 +155,7 @@ section h2.title {
   text-align: center;
   color: #F8FFE5;
   font-size: 3.8rem;
-  font-family: "Dancing Script", cursive;
+  font-family: "Montserrat", sans-serif;
   margin: 2rem 0;
   text-shadow: 0.1rem 0.1rem 0.1rem #636363;
 }
@@ -535,7 +535,7 @@ section.services {
 
 .serving-since {
   padding: 5rem 0;
-  font-family: "Dancing Script", cursive;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #3D3D3D;
   font-size: 4rem;
